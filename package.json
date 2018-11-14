@@ -1,0 +1,41 @@
+{
+  "name": "giphy-trending-gifs",
+  "version": "1.0.0",
+  "description": "A React application that displays the most recent trending GIFs from Giphy.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hifromkevin/Giphy-Trending-GIFs.git"
+  },
+  "author": "Kevin Lam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hifromkevin/Giphy-Trending-GIFs/issues"
+  },
+  "homepage": "https://github.com/hifromkevin/Giphy-Trending-GIFs#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "font-awesome": "^4.7.0",
+    "path": "^0.12.7",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-fontawesome": "^1.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "file-loader": "^2.0.0",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
