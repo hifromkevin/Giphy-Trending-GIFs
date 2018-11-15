@@ -4,7 +4,8 @@
   "description": "A React application that displays the most recent trending GIFs from Giphy.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/index.js",
+    "build": "webpack -d --watch"
   },
   "repository": {
     "type": "git",
