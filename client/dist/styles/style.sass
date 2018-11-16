@@ -1,18 +1,15 @@
-//SAMPLE SASS FILE
-
 /***************/
 /*** IMPORTS ***/
 /***************/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:900');
 
 /*****************/
 /*** VARIABLES ***/
 /*****************/
 
 $white: #fff
-$black-text: #313131
-$orange: #f90
-$green: #090
-$blue: #009
+$black: #000
 
 /****************/
 /***  RESETS  ***/
@@ -22,19 +19,30 @@ $blue: #009
   margin: 0
   padding: 0
 
+body 
+  background-color: $black
+
 /****************/
 /***  CUSTOM  ***/
 /****************/
   
 .main
-  background: $green
+  background: $white
   &__heading
-    color: $orange
+    color: $white
   &__text
-    color: $black-text
+    color: $white
   &__list
-    color: $blue
+    color: $white
     list-style-type: circle
     margin-left: 2%
   &__listItem
     margin-left: 2%
+
+.menu
+  padding: 2vh
+  &__logo
+    color: $white
+    font-family: Roboto, sans-serif
+    font-weight: 900
+
