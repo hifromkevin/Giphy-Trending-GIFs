@@ -3,7 +3,7 @@ import FontAwesome from 'react-fontawesome';
 
 const MainMenu = () => (
   <div className="menu">
-		<h1 className="menu__logo"><FontAwesome name="file" /> NotGiphy</h1>
+		<h1 className="menu__logo"><FontAwesome name="file" /> {'{'}not{'}'}GIPHY</h1>
   </div>
 );
 
