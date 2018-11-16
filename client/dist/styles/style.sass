@@ -10,6 +10,7 @@
 
 $white: #fff
 $black: #000
+$pink: #ffc0cb
 
 /****************/
 /***  RESETS  ***/
@@ -25,19 +26,10 @@ body
 /****************/
 /***  CUSTOM  ***/
 /****************/
-  
-.main
-  background: $white
-  &__heading
-    color: $white
-  &__text
-    color: $white
-  &__list
-    color: $white
-    list-style-type: circle
-    margin-left: 2%
-  &__listItem
-    margin-left: 2%
+
+.content
+  width: 95%
+  margin: 0 auto
 
 .menu
   padding: 2vh
@@ -45,4 +37,24 @@ body
     color: $white
     font-family: Roboto, sans-serif
     font-weight: 900
+
+.search
+  width: 100%
+  &__input
+    width: 94%
+    margin-right: 1%
+    height: 50px
+    display: inline-block
+    float: left
+    font-size: 1.2em
+    border: none
+  &__button
+    width: 4%
+    height: 50px
+    background-color: $pink
+    display: inline-block
+    float: left
+    border: none
+    font-size: 1.2em
+    color: white
 
