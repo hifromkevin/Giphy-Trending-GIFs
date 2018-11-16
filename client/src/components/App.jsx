@@ -15,10 +15,10 @@ export default class App extends Component {
 	}
 
 	componentWillMount() {
-	fetch('http://api.giphy.com/v1/gifs/trending?api_key=OxyfaFK4scUWNYDQHaQDSoXC0GFWbddt&limit=5')
+	fetch(`http://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}&limit=5`)
 		.then(response => response.json())
 		.then((response) => {
-			console.log('res', response);
+			console.log(response)
 			this.setState({
 				gifs: response.data
 			})
@@ -28,19 +28,14 @@ export default class App extends Component {
 		})
 	}
 
-	showMeGifs(gifs) {
-
-	}
-
 	render() {
 		return (
 		<div className="content">
 			<MainMenu />
 			<Search />
 			<div className="main">
-				{console.log('ahhhh!', this.state.gifs)}
           {this.state.gifs.map((gif, index) => {
-            return <img src={gif.images.downsized_large.url} key={index} />
+            return <img src={gif.images.downsized_medium.url} key={index} />
 
           })
           }
