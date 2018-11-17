@@ -15,7 +15,7 @@ export default class App extends Component {
 	}
 
 	componentWillMount() {
-	fetch(`http://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}&limit=5`)
+	fetch(`http://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}&limit=100`)
 		.then(response => response.json())
 		.then((response) => {
 			console.log(response)
@@ -34,16 +34,16 @@ export default class App extends Component {
 			<MainMenu />
 			<Search />
 			<div className="main">
-          {this.state.gifs.map((gif, index) => {
-            return <img src={gif.images.downsized_medium.url} key={index} />
-
+          {this.state.gifs.map(gif => {
+            return ( <div  key={gif.id}>
+            <img src={gif.images.downsized_medium.url} />
+            <p>{gif.title}, {gif.rating}, {gif.title}</p>
+            <img src={gif.user.avatar_url} width="30px" />
+            <p>{gif.username}, {gif.import_datetime}</p>
+            </div>)
           })
           }
 			</div>
 		</div>)
 	}
 }
-
-				// {this.state.gifs.map((gif, i) => {
-				// 	<img src={gif.images.downsized_large.url} key={i} />
-				// })}
