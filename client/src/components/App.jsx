@@ -3,6 +3,7 @@ import FontAwesome from 'react-fontawesome';
 
 import MainMenu from './MainMenu.jsx';
 import Search from './Search.jsx';
+import Gif from './Gif.jsx';
 import API_KEY from '../../../config/API_KEY.js';
 
 export default class App extends Component {
@@ -56,13 +57,8 @@ export default class App extends Component {
 				<MainMenu />
 				<Search />
 				<div className="main">
-	          {this.state.gifs.map((gif, i) => {
-	            return ( <div className="main__block" key={gif.id}>
-	            <img className="main__block__image" src={gif.images.downsized_medium.url} />
-	            <p>{gif.title}, {gif.rating}, {gif.import_datetime}</p>
-	            <img src={gif.user.avatar_url} width="30px" />
-	            <p>{gif.username}</p>
-	            </div>)
+	          {this.state.gifs.map(gif => {
+	          	return <Gif gif={gif} key={gif.id} />
 	          })
 	          }
 				</div>
@@ -77,3 +73,4 @@ export default class App extends Component {
 		)
 	}
 }
+
