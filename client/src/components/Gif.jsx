@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Gif = ({gif}) => (
-<div className="main__block" key={gif.id}>
+<div className="gif" key={gif.id}>
 	{console.log('GIF!', gif)}
-	<img className="main__block__image" src={gif.images.downsized_medium.url} />
+	<img className="gif__image" src={gif.images.downsized_medium.url} />
 	<p>{gif.title}, {gif.rating}, {gif.import_datetime}</p>
 
 	<p>{gif.username}</p>
