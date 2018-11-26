@@ -68,3 +68,6 @@ package-lock.json
 912ec66d7572ff821749319396470bde.svg
 b06871f281fee6b241d60582ae9369b9.ttf
 bundle.js
+
+# Apple files
+.DS_Store
